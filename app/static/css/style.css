@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(243, 243, 243);
+}
+
+body a {
+    color: #5ca4da;
+    text-decoration: none;
+}
+
+body.dark {
+    background-color: rgb(43, 41, 41);
+    color: #fff;
+}
+
+.bot img{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+}
+
+.bottom {
+    background-color: rgb(201, 201, 201);
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+}
+
+.bottom.dark {
+    background-color: rgb(50, 50, 50);
+}
+
+.bottom a {
+    font-size: 17px;
+    line-height: 40px;
+    margin: 0 10px;
+    float: right;
+    color: rgb(113, 113, 113);
+    text-decoration: underline;
+}
+
+.bottom.dark a {
+    color: rgb(195, 195, 195);
+}
+
+.bottom p {
+    line-height: 40px;
+    margin: 0 10px;
+    float: left;
+    font-size: 17px;
+    color: rgb(113, 113, 113);
+}
+
+.bottom.dark p {
+    color: rgb(195, 195, 195);
+}
+
+.content {
+    margin: 50px 0 40px 0;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+#dark-mode-switcher {
+    align-items: center;
+    margin: 15px;
+    position: relative;
+    height: 20px;
+    width: 45px;
+    float: right;
+}
+
+#dark-mode-switcher input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+#dark-mode-switcher .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: .4s;
+}
+
+#dark-mode-switcher .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+#dark-mode-switcher input:checked + .slider {
+    background-color: #546677;
+}
+
+#dark-mode-switcher input:checked + .slider:before {
+    transform: translateX(24px);
+    background-color: #232e42;
+}
+
+#dark-mode-switcher.dark .slider {
+    background-color: #f2f2f2;
+}
+
+#dark-mode-switcher.dark input:checked + .slider {
+    background-color: #555;
+}
+
+#dark-mode-switcher.dark input:checked + .slider:before {
+    background-color: #f2f2f2;
+    transform: translateX(34px);
+}
+
+#gkb-description {
+    font-size: 17px;
+    margin: 20px 20% 0 20%;
+}
+
+#gkb-infos {
+    margin-top: 50px;
+    text-align: left;
+}
+
+#gkb-invite {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #5ca4da;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 20px auto;
+    display: block;
+    width: 220px;
+}
+
+#gkb-invite:hover {
+    background-color: #a1cbeb;
+}
+
+#gkb-profile {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+#irr-verbs-subcmds-list {
+    list-style-type: none;
+}
+
+#languageSwitcher {
+    background-color: rgb(50, 50, 50);
+    color: rgb(255, 255, 255);
+    margin: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    height: 34px;
+    line-height: 1.6;
+    float: right;
+}
+
+#languageSwitcher option {
+    background-color: rgb(50, 50, 50);
+    color: #fff;
+    font-size: 16px;
+}
+
+.privacy {
+    text-align: left;
+    margin: 75px 10% 75px 10%;
+}
+
+#return-button {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.terms {
+    text-align: left;
+    margin: 75px 10% 75px 10%;
+}
+
+.top {
+    background-color: rgb(50, 50, 50);
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+}
+
+.top a img {
+    width: 120px;
+    height: 50px;
+    float: left;
+    margin: 0 10px;
+}
+
+.top-buttons {
+    display: inline;
+    font-size: 17px;
+    line-height: 50px;
+    float: left;
+}
+  
+.top-button {
+    color: #fff;
+    margin: 0 14px;
+    text-decoration: none;
+}
+
+.top-button:hover {
+    color: #a5c8e3;
+}
+
+.top-button-active {
+    color: #5ca4da;
+    margin: 0 14px;
+    text-decoration: none;
+}
