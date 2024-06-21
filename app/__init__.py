@@ -23,5 +23,13 @@ def create_app(test_config=None):
     def index():
         print(request.accept_languages)
         return redirect('/{}/home'.format(lang))
+    
+    @app.route("/<lang>/home")
+    def home(lang):
+        return render_template('{}/home.html'.format(lang))
+    
+    @app.route("/<lang>/privacy")
+    def privacy(lang):
+        return render_template('{}/privacy.html'.format(lang))
         
     return app

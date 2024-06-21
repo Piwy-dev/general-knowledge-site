@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Privacy policy</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</head>
+
+<body class="main">
+    <!-- Top navbar -->
+    <div class="top">
+        <!-- Logo -->
+        <a href="/en/home">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+        </a>
+        
+        <!-- Navigation buttons -->
+        <div class="top-buttons">
+            <a href="/en/games" class="top-button" id="games-button">Games</a>
+            <a href="/en/bots" class="top-button" id="bots-button">Bots</a>
+        </div>
+
+        <!-- Language switcher -->
+        <select id="languageSwitcher">
+            <option value="en"><span>&#x1F1EC;&#x1F1E7;</span> English</option>
+            <option value="fr"><span>&#x1F1EB;&#x1F1F7;</span> Français</option>
+            <option value="nl"><span>&#x1F1F3;&#x1F1F1;</span> Nederlands</option>
+        </select>
+
+        <!-- Dark mode switcher -->
+        <label id="dark-mode-switcher" class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <div class="privacy">
+        <!-- Return button -->
+        <a href="/en/bots/gkb" id="return-button">&#x2B05; General Knowledge Bot</a>
+
+        <h1>🇬🇧 Privacy policy</h1>
+        <p>🕖 <b>Last modified:</b> Wednesday, March 02, 2022.</p>
+        <h2>1. What we collect</h2>
+        <p>The General Knowledge application collects two types of data. On the one hand data related to users, and on
+            the other hand data related to the configuration of the application on the server.</p>
+        <h3>1.1. Data related to users</h3>
+        <p>The only data linked to the users collected is the user ID. This identifier is collected when the user uses
+            one of the test or profile commands. This identifier links the user to his number of points to save his
+            progress and that he can have them
+            later.
+        </p>
+        <h3>1.2. Configuration Data</h3>
+        <p>Configuration data includes all the data that administrators of a server can save to keep their preferences
+            for that server, so they don’t have to save them every time. For now, this only includes the language used
+            by the application.</p>
+        <h3>1.3. Other data</h3>
+        <p>To ensure that the collected data remains linked to the correct server, the server identifier is also
+            collected for each of the operations mentioned above.</p>
+        <h2>2. Data storage</h2>
+        <p>All data is stored in a database. Only the bot creator (Piwy#2703) has access to it. Under no circumstances
+            will this data be transmitted to another entity or person, except in the case of the addition of another
+            developer to the development team.
+            If this is the case, this person will be mentioned in this document.</p>
+        <h3>2.1. Access method</h3>
+        <p>All members of the server can view their points or those of other members via the profile or general ranking
+            command of the server. However, they may not modify them, except in specific cases (see point 3).</p>
+        <h2>3. Modification of data</h2>
+        <p>The data can be modified in three different ways.</p>
+        <h3>3.1. By the application</h3>
+        <p>User’s points are automatically changed each time this user uses a test command. He gets points if he answers
+            correctly, and he loses points if he doesn’t.</p>
+        <h3>3.2. By the server administrators</h3>
+        <p>Administrators have the option to change the language used by the application in the server. They also have
+            the option to change a member’s points. In both cases, the changes are saved automatically.</p>
+        <h3>3.3. By the creator of the application</h3>
+        <p>The creator (Piwy#2703), with access to the database, can modify the data directly in the database. However,
+            this is never done unless the consent of the concerned user(s) is given.</p>
+        <h2>4. Data deletion</h2>
+        <p>The data collected are for an indefinite period. Usualy, they are never deleted. However, it is possible to
+            submit a request for deletion of the data by e-mail or via Discord (see point 5). In order to delete the
+            data, the ID of the server(s)
+            concerned and the user ID will be requested.</p>
+        <h2>5. Contact us</h2>
+        <p>For every other information or for a request of suppression of the data, you can contact the creator of the
+            application.</p>
+        <p><b>By mail: </b><a href="mailto:byp.studio.bots@gmail.com">byp.studio.bots@gmail.com</a></p>
+        <p><b>With Discord: </b>
+        <ul>
+            <li>By contacting Piwy#2703</li>
+            <li>By joining the <a href="https://discord.com/invite/v6aMwZGneQ">help server</a></li>
+        </ul>
+        </p>
+    </div>
+
+    <!-- Bottom navbar -->
+    <div class="bottom">
+        <a href="terms-of-services">Terms of services</a>
+        <a href="privacy-policy">Privacy policy</a>
+    </div>
+</body>
+
+</html>
