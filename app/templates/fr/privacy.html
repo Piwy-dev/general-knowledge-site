@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Politique confidentialité</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</head>
+
+<body class="main">
+    <!-- Top navbar -->
+    <div class="top">
+        <!-- Logo -->
+        <a href="/en/home">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+        </a>
+
+        <!-- Navigation buttons -->
+        <div class="top-buttons">
+            <a href="/fr/games" class="top-button" id="games-button">Jeux</a>
+            <a href="/fr/bots" class="top-button" id="bots-button">Bots</a>
+        </div>
+        
+        <!-- Language switcher -->
+        <select id="languageSwitcher">
+            <option value="fr"><span>&#x1F1EB;&#x1F1F7;</span> Français</option>
+            <option value="en"><span>&#x1F1EC;&#x1F1E7;</span> English</option>
+            <option value="nl"><span>&#x1F1F3;&#x1F1F1;</span> Nederlands</option>
+        </select>
+    </div>
+    
+    <div class="privacy">
+        <!-- Return button -->
+        <a href="/fr/" id="return-button">&#x2B05; General Knowledge Bot</a>
+
+        <h1>🇫🇷 Politique de confidentialité</h1>
+        <p>🕖 <b> Dernière modification:</b> le mercredi 02 mars 2022.</p>
+        <h2>1. Ce que nous collectons</h2>
+        <p>L’application General Knowledge collecte deux types de données. D’une part les données liées aux utilisateurs, et d’autre part les données liées à la configuration de l’application sur le serveur.</p>
+        <h3>1.1. Données liées aux utilisateurs</h3>
+        <p>La seule donnée liée aux utilisateurs collectée est l’identifiant de celui-ci. Cet identifiant est collecté quand l’utilisateur utilise une des commandes de test ou de profil. Cet identifiant permet de lier l’utilisateur à son nombre de points
+            pour sauvegarder sa progression et qu’il puisse les avoir plus tard.</p>
+        <h3>1.2. Données liées à la configuration</h3>
+        <p>Les données liées à la configuration comprennent toutes les données que les administrateurs d’un serveurs peuvent enregistrer pour garder leurs préférences pour ce serveur, pour ne pas devoir les enregistrer à chaque fois. Pour le moment, cela
+            ne comprend que la langue utilisée par l’application.</p>
+        <h3>1.3. Autres données</h3>
+        <p>Pour s’assurer que les données collectées restent liées au bon serveur, l'identifiant du serveur est lui aussi collecté pour chacune des opérations mentionnées ci-dessus.</p>
+        <h2>2. Stockage des données</h2>
+        <p>Toutes les données sont stockées dans une base de données. Seul le créateur du bot (Piwy#2703) y a accès. En aucun cas ces données ne seront transmises à une autre entité ou une autre personne, sauf dans le cas de l’ajout d’un autre développeur
+            à l’équipe de développement. Si tel est le cas, cette personne sera mentionnée dans le présent document.</p>
+        <h3>2.1. Méthode d’accès</h3>
+        <p>Tous les membres du serveur peuvent consulter leurs points ou ceux des autres membres via la commande de profil ou de classement général du serveur. Ils ne peuvent cependant pas les modifier, sauf cas précis (voir point 3).</p>
+        <h2>3. Modification des données</h2>
+        <p>Les données peuvent être modifiées de trois manières différentes.</p>
+        <h3>3.1. Par l’application</h3>
+        <p>Les points d’un utilisateur sont automatiquement modifiés, à chaque fois qu’un utilisateur utilise une commande de test. Il reçoit des points s’il répond correctement, et il en perd dans le cas contraire.</p>
+        <h3>3.2. Par les administrateurs du serveur</h3>
+        <p>Les administrateurs ont la possibilité de changer la langue utilisée par l’application dans le serveur. Ils ont aussi la possibilité de modifier les points d’un membre. Dans les deux cas, les modifications sont enregistrées automatiquement.</p>
+        <h3>3.3. Par le créateur de l’application</h3>
+        <p>Le créateur (Piwy#2703), ayant accès à la base de données, peut modifier les données directement dans celle-ci. Cependant, ceci n’est jamais fait sauf si l’accord du/des utilisateurs concernés est donné.</p>
+        <h2>4. Suppression des données</h2>
+        <p>Les données collectées le sont pour une période indéfinie. A priori, elles ne sont jamais supprimées. Cependant, il est possible d’introduire une demande de suppression des données, par mail ou via Discord (voir point 5). Afin de supprimer les
+            données il sera demandé l'identifiant du/des serveurs concernés ainsi que l’identifiant de l’utilisateur.</p>
+        <h2>5. Nous contacter</h2>
+        <p>Pour tout autre renseignement ou pour une demande de suppression des données, vous pouvez contacter le créateur de l’application.</p>
+        <p><b>Par mail: </b><a href="mailto:byp.studio.bots@gmail.com">byp.studio.bots@gmail.com</a></p>
+        <p><b>Par Discord: </b>
+            <ul>
+                <li>En contactant Piwy#2703</li>
+                <li>En rejoinant le <a href="https://discord.com/invite/v6aMwZGneQ">serveur d’aide</a></li>
+            </ul>
+        </p>
+    </div>
+
+    <!-- Bottom navbar -->
+    <div class="bottom">
+        <a href="terms-of-services">Conditions d'utilisation</a>
+        <a href="privacy">Politique de confidentialité</a>
+    </div>
+</body>
+
+</html>
