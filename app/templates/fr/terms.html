@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Conditions utilisation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</head>
+
+<body class="main">
+    <!-- Top navbar -->
+    <div class="top">
+        <!-- Logo -->
+        <a href="/fr/home">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+        </a>
+
+        <!-- Navigation buttons -->
+        <div class="top-buttons">
+            <a href="/fr/games" class="top-button" id="games-button">Jeux</a>
+            <a href="/fr/bots" class="top-button" id="bots-button">Bots</a>
+        </div>
+        
+        <!-- Language switcher -->
+        <select id="languageSwitcher">
+            <option value="fr"><span>&#x1F1EB;&#x1F1F7;</span> Français</option>
+            <option value="en"><span>&#x1F1EC;&#x1F1E7;</span> English</option>
+            <option value="nl"><span>&#x1F1F3;&#x1F1F1;</span> Nederlands</option>
+        </select>
+    </div>
+    
+    <div class="terms">
+        <!-- Return button -->
+        <a href="/fr/home" id="return-button">&#x2B05; General Knowledge Bot</a>
+        
+        <h1>🇫🇷 Conditions d’utilisation</h1>
+        <p>🕖 <b>Dernière modification:</b> le mercredi 02 mars 2022.</p>
+        <p>⚠️ Merci de lire ces conditions d’utilisation attentivement avent d’utiliser l’application: General Knowledge.
+        </p>
+
+        <h2>1. Informations générale</h2>
+        <p>Ce bot utilise une connexion à une base de données qui sauvegarde les différentes données des utilisateurs, comme leurs points. Chaque fois que vous utilisez une commande de test vous gagnez des points si vous répondez correctement et vous en
+            perdez dans le cas contraire.</p>
+        <h3>1.1. Politique de confidentialité</h3>
+        <p>Le nombre de points d’un utilisateur est enregistré, dans une base de données, à chaque utilisation d’une commande de test par celui-ci. Afin de pouvoir lier les points au bon utilisateurs, son identifiant est enregistré en même temps. L’identifiant
+            des utilisateurs est la seule donnée que cette application collecte. Une autre donnée collectée par l’application est la langue choisie pour le serveur. Les administrateurs ont la possibilité de choisir une langue pour l’application. Celle-ci
+            est ensuite stockée dans la base de données.
+        </p>
+        <p>Pour plus d'informations, tu peux consulter notre <a href="politique-de-confidentialité.html">politique de
+                confidentialité</a>.</p>
+
+        <h2>2. Commandes de test</h2>
+        <p>Pour avoir une question de vrai ou faux, utilises la commande <b>/truefalse</b>, ensuite réagis avec ✅ si c'est vrai, ou avec ❌ si c'est faux.</p>
+        <h3>2.2. Test des drapeaux</h3>
+        <p>Utilises la commande <b>/flag</b> pour tester tes connaissances en drapeaux. Le premier message que tu envoies par après sera considéré comme ta réponse.</p>
+        <h3>2.3. Test des capitales</h3>
+        <p>Utilises la commande <b>/capital</b> pour tester tes connaissances en capitales. Le premier message que tu envoies par après sera considéré comme ta réponse.</p>
+        <h3>2.4. Test des logos</h3>
+        <p>Utilises la commande <b>/logo</b> pour tester tes connaissances en logos. Le premier message que tu envoies par après sera considéré comme ta réponse.</p>
+
+        <h2>3. Commandes des points</h2>
+        <p>Ces commandes permettent de voir toutes les points de chaque utilisateur. Elles sont liées en permanence à la base de données. Seuls les administrateurs des serveurs ont la possibilité de modifier les points d’un utilisateur.
+        </p>
+        <h3>3.1. Profile</h3>
+        <p>La commande <b>/profile</b> te montre tes points. Tu peux taguer quelqu'un après la commande pour voir ses points.
+        </p>
+        <h3>3.2. Classement</h3>
+        <p>Pour voir le classement de serveur utilises la commande <b>/leaderboard</b>. Cette commande ne montre que les 20 premiers du serveur.</p>
+        <h3>3.3. Changer les points</h3>
+        <p>Si tu veux changer les points d'un membre, utilise la commande <b>/adminxp</b>. Cette commande est uniquement disponible pour les administrateurs.</p>
+
+        <h2>4. Commandes de configuration</h2>
+        <p>Les commandes de configuration permettent de configurer les paramètres du bot. Elles ne sont disponibles que pour les administrateurs.</p>
+        <h3>4.1. Configuration de la langue</h3>
+        <p>Configurez la langue du bot avec la commande <b>/setlang</b>.</p>
+        <h2>5. Nous contacter</h2>
+        <p>Pour tout autre renseignement ou pour une demande de suppression des données, vous pouvez contacter le créateur de l’application.</p>
+        <p><b>Par mail: </b><a href="mailto:byp.studio.bots@gmail.com">byp.studio.bots@gmail.com</a></p>
+        <p><b>Par Discord: </b>
+            <ul>
+                <li>En contactant Piwy#2703</li>
+                <li>En rejoinant le <a href="https://discord.com/invite/v6aMwZGneQ">serveur d’aide</a></li>
+            </ul>
+        </p>
+    </div>
+
+    <!-- Bottom navbar -->
+    <div class="bottom">
+        <a href="terms-of-services">Condition d'utilisation</a>
+        <a href="privacy-policy">Politique de confidentialité</a>
+    </div>
+</body>
+
+</html>

@@ -28,8 +28,20 @@ def create_app(test_config=None):
     def home(lang):
         return render_template('{}/home.html'.format(lang))
     
+    @app.route("/privacy")
+    def privacy_redirect():
+        return redirect('/{}/privacy'.format(lang))
+    
     @app.route("/<lang>/privacy")
     def privacy(lang):
         return render_template('{}/privacy.html'.format(lang))
+    
+    @app.route("/terms")
+    def terms_redirect():
+        return redirect('/{}/terms'.format(lang))
+    
+    @app.route("/<lang>/terms")
+    def privacy(lang):
+        return render_template('{}/terms.html'.format(lang))
         
     return app
