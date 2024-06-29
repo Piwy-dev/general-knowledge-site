@@ -41,7 +41,7 @@ def create_app(test_config=None):
         return redirect('/{}/terms'.format(lang))
     
     @app.route("/<lang>/terms")
-    def privacy(lang):
+    def terms(lang):
         return render_template('{}/terms.html'.format(lang))
         
     return app
