@@ -43,5 +43,13 @@ def create_app(test_config=None):
     @app.route("/<lang>/terms")
     def terms(lang):
         return render_template('{}/terms.html'.format(lang))
+    
+    @app.route("/suppression-request")
+    def suppression_request_redirect():
+        return redirect('/{}/suppression-request'.format(lang))
+    
+    @app.route("/<lang>/suppression-request")
+    def suppression_request(lang):
+        return render_template('{}/suppression-request.html'.format(lang))
         
     return app

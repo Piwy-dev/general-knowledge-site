@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Privacyverklaring</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</head>
+
+<body class="main">
+    <!-- Top navbar -->
+    <div class="top">
+        <!-- Logo -->
+        <a href="/nl/home">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+        </a>
+
+        <!-- Navigation buttons -->
+        <div class="top-buttons">
+            <a href="/nl/games" class="top-button" id="games-button">Spelen</a>
+            <a href="/nl/bots" class="top-button" id="bots-button">Bots</a>
+        </div>
+
+        <!-- Language switcher -->
+        <select id="languageSwitcher">
+            <option value="nl"><span>&#x1F1F3;&#x1F1F1;</span> Nederlands</option>
+            <option value="fr"><span>&#x1F1EB;&#x1F1F7;</span> Français</option>
+            <option value="en"><span>&#x1F1EC;&#x1F1E7;</span> English</option>
+        </select>
+    </div>
+
+    <div class="privacy">
+        <!-- Return button -->
+        <a href="/nl/home" id="return-button">&#x2B05; General Knowledge Bot</a>
+
+        <h1>Verzoek tot verwijdering van gegevens </h1>
+    </div>
+
+    <!-- Bottom navbar -->
+    <div class="bottom">
+        <a href="terms-of-services">Gebruiksvoorwaarden</a>
+        <a href="privacy">Privacyverklaring</a>
+    </div>
+</body>
+
+</html>
