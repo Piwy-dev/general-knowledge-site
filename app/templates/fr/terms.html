@@ -12,17 +12,9 @@
 <body class="main">
     <!-- Top navbar -->
     <div class="top">
-        <!-- Logo -->
-        <a href="/fr/home">
-            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
-        </a>
+        <!-- Return button -->
+        <a href="/fr/home" id="return-button">&#x2B05; Acceuil</a>
 
-        <!-- Navigation buttons -->
-        <div class="top-buttons">
-            <a href="/fr/games" class="top-button" id="games-button">Jeux</a>
-            <a href="/fr/bots" class="top-button" id="bots-button">Bots</a>
-        </div>
-        
         <!-- Language switcher -->
         <select id="languageSwitcher">
             <option value="fr"><span>&#x1F1EB;&#x1F1F7;</span> Français</option>
@@ -32,9 +24,6 @@
     </div>
     
     <div class="terms">
-        <!-- Return button -->
-        <a href="/fr/home" id="return-button">&#x2B05; General Knowledge Bot</a>
-        
         <h1>🇫🇷 Conditions d’utilisation</h1>
         <p>🕖 <b>Dernière modification:</b> le mercredi 02 mars 2022.</p>
         <p>⚠️ Merci de lire ces conditions d’utilisation attentivement avent d’utiliser l’application: General Knowledge.
@@ -84,12 +73,6 @@
                 <li>En rejoinant le <a href="https://discord.com/invite/v6aMwZGneQ">serveur d’aide</a></li>
             </ul>
         </p>
-    </div>
-
-    <!-- Bottom navbar -->
-    <div class="bottom">
-        <a href="terms-of-services">Condition d'utilisation</a>
-        <a href="privacy-policy">Politique de confidentialité</a>
     </div>
 </body>
 

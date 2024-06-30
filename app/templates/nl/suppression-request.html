@@ -13,16 +13,8 @@
 <body class="main">
     <!-- Top navbar -->
     <div class="top">
-        <!-- Logo -->
-        <a href="/nl/home">
-            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
-        </a>
-
-        <!-- Navigation buttons -->
-        <div class="top-buttons">
-            <a href="/nl/games" class="top-button" id="games-button">Spelen</a>
-            <a href="/nl/bots" class="top-button" id="bots-button">Bots</a>
-        </div>
+        <!-- Return button -->
+        <a href="/nl/privacy" id="return-button">&#x2B05; Privacyverklaring</a>
 
         <!-- Language switcher -->
         <select id="languageSwitcher">
@@ -33,9 +25,6 @@
     </div>
 
     <div class="suppression-request">
-        <!-- Return button -->
-        <a href="/nl/home" id="return-button">&#x2B05; General Knowledge Bot</a>
-
         <h1>Verzoek tot verwijdering van gegevens </h1>
 
         <form action="/suppression-request" method="POST">

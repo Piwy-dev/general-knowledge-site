@@ -12,16 +12,8 @@
 <body class="main">
     <!-- Top navbar -->
     <div class="top">
-        <!-- Logo -->
-        <a href="/nl/home">
-            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
-        </a>
-
-        <!-- Navigation buttons -->
-        <div class="top-buttons">
-            <a href="/nl/games" class="top-button" id="games-button">Spelen</a>
-            <a href="/nl/bots" class="top-button" id="bots-button">Bots</a>
-        </div>
+        <!-- Return button -->
+        <a href="/nl/home" id="return-button">&#x2B05; Home</a>
 
         <!-- Language switcher -->
         <select id="languageSwitcher">
@@ -32,9 +24,6 @@
     </div>
 
     <div class="privacy">
-        <!-- Return button -->
-        <a href="/fr/home" id="return-button">&#x2B05; General Knowledge Bot</a>
-
         <h1>🇳🇱 Privacyverklaring</h1>
         <p>
             🕖 <b> Laatste update:</b> 29 juni 2024.
@@ -123,12 +112,6 @@
             <li>Pierre-Yves Haubruge : piwy_</li>
         </ul>
         </p>
-    </div>
-
-    <!-- Bottom navbar -->
-    <div class="bottom">
-        <a href="terms-of-services">Gebruiksvoorwaarden</a>
-        <a href="privacy">Privacyverklaring</a>
     </div>
 </body>
 

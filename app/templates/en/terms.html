@@ -12,16 +12,8 @@
 <body class="main">
     <!-- Top navbar -->
     <div class="top">
-        <!-- Logo -->
-        <a href="/en/home">
-            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
-        </a>
-        
-        <!-- Navigation buttons -->
-        <div class="top-buttons">
-            <a href="/en/games" class="top-button" id="games-button">Games</a>
-            <a href="/en/bots" class="top-button" id="bots-button">Bots</a>
-        </div>
+        <!-- Return button -->
+        <a href="/en/home" id="return-button">&#x2B05; Home</a>
 
         <!-- Language switcher -->
         <select id="languageSwitcher">
@@ -32,8 +24,7 @@
     </div>
     
     <div class="terms">
-        <!-- Return button -->
-        <a href="/en/home" id="return-button">&#x2B05; General Knowledge Bot</a><h1>🇬🇧 Terms of Services</h1>
+        <h1>🇬🇧 Terms of Services</h1>
 
         <p>🕖 <b>Last modified:</b> Wednesday, March 02, 2022.</p>
         <p>⚠️ Please read these terms of services carefully before using the application: General Knowledge.</p>
@@ -83,12 +74,6 @@
                 <li>By joining the <a href="https://discord.com/invite/v6aMwZGneQ">help server</a></li>
             </ul>
         </p>
-    </div>
-
-    <!-- Bottom navbar -->
-    <div class="bottom">
-        <a href="gkb/terms-of-services">Terms of services</a>
-        <a href="gkb/privacy-policy">Privacy policy</a>
     </div>
 </body>
 

@@ -12,16 +12,8 @@
 <body class="main">
     <!-- Top navbar -->
     <div class="top">
-        <!-- Logo -->
-        <a href="/fr/home">
-            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
-        </a>
-
-        <!-- Navigation buttons -->
-        <div class="top-buttons">
-            <a href="/fr/games" class="top-button" id="games-button">Jeux</a>
-            <a href="/fr/bots" class="top-button" id="bots-button">Bots</a>
-        </div>
+        <!-- Return button -->
+        <a href="/fr/home" id="return-button">&#x2B05; Acceuil</a>
 
         <!-- Language switcher -->
         <select id="languageSwitcher">
@@ -32,9 +24,6 @@
     </div>
 
     <div class="privacy">
-        <!-- Return button -->
-        <a href="/fr/home" id="return-button">&#x2B05; General Knowledge Bot</a>
-
         <h1>🇫🇷 Politique de confidentialité</h1>
         <p>
             🕖 <b> Dernière modification:</b> 29 juin 2024.
@@ -114,7 +103,8 @@
             Cependant, il est possible d’introduire une demande de suppression des données via
             <a href="suppression-request">ce lien.</a> Celle-ci sera traitée dans les plus bref délais.
 
-            Concernant les cookies il est possible de les supprimer vous-même. Pour fair cela, veuillez vous référer à la
+            Concernant les cookies il est possible de les supprimer vous-même. Pour fair cela, veuillez vous référer à
+            la
             méthode utilisée par votre navigateur.
         </p>
 
@@ -130,12 +120,6 @@
         </ul>
         </p>
 
-    </div>
-
-    <!-- Bottom navbar -->
-    <div class="bottom">
-        <a href="terms-of-services">Conditions d'utilisation</a>
-        <a href="privacy">Politique de confidentialité</a>
     </div>
 </body>
 
