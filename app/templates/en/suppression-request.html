@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Privacy policy</title>
+    <title>Suppression request</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/suppression-request.css') }}">
     <script src="{{ url_for('static', filename='js/index.js') }}"></script>
 </head>
 
@@ -31,11 +32,21 @@
         </select>
     </div>
 
-    <div class="privacy">
+    <div class="suppression-request">
         <!-- Return button -->
         <a href="/en/home" id="return-button">&#x2B05; General Knowledge Bot</a>
 
         <h1>Data suppression request</h1>
+
+        <form action="/suppression-request" method="POST">
+            <label for="id">Discord identifier:</label>
+            <input type="text" id="id" name="id" required maxlength="18" minlength="18">
+
+            <label for="reason">Reason for this suppression request:</label>
+            <textarea id="reason" name="reason" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
     </div>
 
     <!-- Bottom navbar -->

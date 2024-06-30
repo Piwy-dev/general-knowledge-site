@@ -1,0 +1,43 @@
+.suppression-request {
+    text-align: left;
+    margin: 75px 10% 75px 10%;
+}
+
+.suppression-request form {
+    display: block;
+    margin: 0 0 0 0;
+}
+
+.suppression-request label {
+    display: block;
+    margin: 0 0 10px 0;
+}
+
+.suppression-request input[type="text"] {
+    width: 15%;
+    margin: 0 0 10px 0;
+    display: block;
+}
+
+.suppression-request textarea {
+    width: 80%;
+    height: 100px;
+    margin: 0 0 10px 0;
+    display: block;
+}
+
+.suppression-request button{
+    background-color: #5ca4da;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 0 10px 0;
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.suppression-request button:hover {
+    background-color: #a1cbeb;
+}
