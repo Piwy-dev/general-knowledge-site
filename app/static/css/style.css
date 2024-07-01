@@ -46,43 +46,6 @@ body a {
     text-align: center;
 }
 
-#gkb-description {
-    font-size: 17px;
-    margin: 20px 20% 0 20%;
-}
-
-#gkb-infos {
-    margin-top: 50px;
-    text-align: left;
-}
-
-#gkb-invite {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    background-color: #5ca4da;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 17px;
-    font-weight: 500;
-    margin: 20px auto;
-    display: block;
-    width: 220px;
-}
-
-#gkb-invite:hover {
-    background-color: #a1cbeb;
-}
-
-#gkb-profile {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-}
-
-#irr-verbs-subcmds-list {
-    list-style-type: none;
-}
-
 #languageSwitcher {
     /*background-color: rgb(191, 191, 191);*/
     color: rgb(58, 58, 58);

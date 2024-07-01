@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</head>
+
+<body class="main">
+    <!-- Top navbar -->
+    <div class="top">
+        <!-- Return button -->
+        <a href="/en/home" id="return-button">Home</a>
+
+        <!-- Language switcher -->
+        <select id="languageSwitcher">
+            <option value="en"><span>&#x1F1EC;&#x1F1E7;</span> English</option>
+            <option value="fr"><span>&#x1F1EB;&#x1F1F7;</span> Français</option>
+            <option value="nl"><span>&#x1F1F3;&#x1F1F1;</span> Nederlands</option>
+        </select>
+    </div>
+
+    <div class="home">
+        <h1 id="main-title">General Knowledge Bot</h1>
+        <img src="{{ url_for('static', filename='images/gkb.png') }}" alt="Profile photo" id="profile-img">
+        <!-- Invite button -->
+        <a href="https://discord.com/api/oauth2/authorize?client_id=803979491373219840&permissions=8&scope=bot%20applications.commands"
+            id="invite-button">
+            Invite the bot
+        </a>
+        <p id="description">
+            General Knowledge Bot is a Discord bot about general knowledge. It offers many features and commands to test
+            your general knowledge with your server members. Each time a member uses a test command, he earns points if
+            he answers correctly and loses points in the oposite case. These points and other options are saved in a
+            database. For more information, please refer to our <a href="gkb/terms-of-services">terms of services</a>
+            and <a href="gkb/terms-of-services">privacy policy</a>
+        </p>
+        <div id="infos">
+            <h3>Multilingual</h3>
+            <p>
+                This bot supports 3 languages : French, English and Dutch :
+                <a href="home#config-cmds">see how to configure</a>
+            </p>
+
+            <h2>Commands list</h2>
+
+            <h3>Test commands</h3>
+            <ol>
+                <li><b>/truefalse</b> send you a message containing a proposition. Once done you can click on the
+                    apropriate button
+                    depanding if you think the proposition is true or false.</li>
+                <li><b>/flag</b> sends you a message containing a flag. Once done you can enter the name of the country
+                    that
+                    correspond to the flag by clicking on the button at the bottom of the message.
+                <li><b>/capital</b> sends you a message containing a contry name. Once done you can enter the name of
+                    the country's
+                    capital by clicking on the button at the bottom of the message.</li>
+                <li><b>/logo</b> sends you a message containing a logo. Once done you can enter the name of the company
+                    that has
+                    this logo by clicking on the button at the bottom of the message.</li>
+            </ol>
+
+            <h3>Irregular verbs commands</h3>
+            <ol>
+                <li><b>/verbs-list</b> send a message containing the list off all verbs in function of the following
+                    options :
+                    <ol id="irr-verbs-subcmds-list">
+                        <li><u>language</u> : the language of the verbs list (English or Dutch).
+                        <li><u>showtrad</u> : if True display the infinitive of the verb and its translation in French ;
+                            else display the infinitive, the imperfect and the past participle.</li>
+                    </ol>
+                </li>
+                <li><b>/study-infinitive</b> documentation to come ...</li>
+                <li><b>/study-imperfect</b> documentation to come ...</li>
+                <li><b>/study-participle</b> documentation to come ...</li>
+            </ol>
+
+            <h3>Points commands</h3>
+            <ol>
+                <li><b>/profile</b> shows the points of the sellected <b><i>user.</i></b></li>
+                <li><b>/leaderboard</b> shows the 20 first members of the server with the more points.</li>
+                <li><b>/adminxp</b> changes the points of the selected <b><i>user</i></b>. This command is only
+                    available for administrators.</li>
+            </ol>
+
+            <h3 id="config-cmds">Configuration commands</h3>
+            <ol>
+                <li><b>/setlang</b> change the bot's language to the selected language language a supported language
+                    (French, English, Dutch) </li>
+            </ol>
+        </div>
+    </div>
+</body>
+
+</html>
