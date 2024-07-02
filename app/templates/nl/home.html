@@ -27,11 +27,21 @@
     <div class="home">
         <h1 id="main-title">General Knowledge Bot</h1>
         <img src="{{ url_for('static', filename='images/gkb.png') }}" alt="Profile photo" id="profile-img">
+
         <!-- Invite button -->
         <a href="https://discord.com/api/oauth2/authorize?client_id=803979491373219840&permissions=8&scope=bot%20applications.commands"
             id="invite-button">
             Inviter le bot
         </a>
+
+        <!-- GitHub button -->
+        <div class="github-button">
+            <a href="https://github.com/Piwy-dev/general-knowledge-site">
+                <img src="{{ url_for('static', filename='images/github-logo.svg') }}" alt="GitHub Logo">
+                GitHub
+            </a>
+        </div>
+        
         <p id="description">
             General Knowledge Bot is een Discord-bot over algemene kennis. Het biedt veel functies en commando's om je
             algemene kennis te testen met de leden van je server. Telkens wanneer een lid een testcommando gebruikt,

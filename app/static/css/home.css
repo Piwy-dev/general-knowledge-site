@@ -5,7 +5,27 @@
 
 #description {
     text-align: left;
-    margin: 30px 0 20px 0;
+    margin: 10px 0 20px 0;
+}
+
+.github-button {
+    margin: 20px 0 20px 0;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.github-button img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px; /* Added margin-right to create space between image and text */
+    vertical-align: middle; /* Align the image vertically in the middle of the line */
+}
+
+.github-button a {
+    color: #24292e;
+    font-size: 17px;
+    line-height: 30px;
+    display: inline-block; /* Added display: inline-block to make the text appear next to the image */
 }
 
 #infos {

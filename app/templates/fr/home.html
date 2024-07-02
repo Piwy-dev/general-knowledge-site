@@ -26,12 +26,23 @@
 
     <div class="home">
         <h1 id="main-title">General Knowledge Bot</h1>
+
         <img src="{{ url_for('static', filename='images/gkb.png') }}" alt="Profile photo" id="profile-img">
+
         <!-- Invite button -->
         <a href="https://discord.com/api/oauth2/authorize?client_id=803979491373219840&permissions=8&scope=bot%20applications.commands"
             id="invite-button">
             Inviter le bot
         </a>
+
+        <!-- GitHub button -->
+        <div class="github-button">
+            <a href="https://github.com/Piwy-dev/general-knowledge-site">
+                <img src="{{ url_for('static', filename='images/github-logo.svg') }}" alt="GitHub Logo">
+                GitHub
+            </a>
+        </div>
+
         <p id="description">
             General Knowledge Bot est un bot Discord de culture générale. Il propose plusieurs commandes et
             fonctionalité pour tester tes connaissances en culture génrale avec les membres de ton serveur. Chaque fois
@@ -43,52 +54,54 @@
         <div id="infos">
             <h3>Multilingue</h3>
             <p>
-            Ce bot supporte 3 langues : Français, Anglais et Néerlandais :
-            <a href="home#config-cmds">voir comment configurer</a>
+                Ce bot supporte 3 langues : Français, Anglais et Néerlandais :
+                <a href="home#config-cmds">voir comment configurer</a>
             </p>
 
             <h2>Liste des commandes</h2>
 
             <h3>Commandes de test</h3>
             <ol>
-            <li><b>/vraifaux</b>
-                envoie un message contenant une proposition. Une fois fait, vous pouvez cliquer sur
-                le bouton approprié en fonction de si vous pensez que la proposition est vraie ou fausse.</li>
-            <li><b>/drapeau</b>
-                envoie un message contenant un drapeau. Une fois fait, vous pouvez entrer le nom du pays qui
-                correspond au drapeau en cliquant sur le bouton en bas du message.
-            <li><b>/capitale</b>
-                envoie un message contenant le nom d'un pays. Une fois fait, vous pouvez entrer le nom de la
-                capitale de ce pays en cliquant sur le bouton en bas du message.</li>
-            <li><b>/logo</b> envoie un message contenant un logo. Une fois fait, vous pouvez entrer le nom de la
-                société qui a ce logo en cliquant sur le bouton en bas du message.</li>
+                <li><b>/vraifaux</b>
+                    envoie un message contenant une proposition. Une fois fait, vous pouvez cliquer sur
+                    le bouton approprié en fonction de si vous pensez que la proposition est vraie ou fausse.</li>
+                <li><b>/drapeau</b>
+                    envoie un message contenant un drapeau. Une fois fait, vous pouvez entrer le nom du pays qui
+                    correspond au drapeau en cliquant sur le bouton en bas du message.
+                <li><b>/capitale</b>
+                    envoie un message contenant le nom d'un pays. Une fois fait, vous pouvez entrer le nom de la
+                    capitale de ce pays en cliquant sur le bouton en bas du message.</li>
+                <li><b>/logo</b> envoie un message contenant un logo. Une fois fait, vous pouvez entrer le nom de la
+                    société qui a ce logo en cliquant sur le bouton en bas du message.</li>
             </ol>
 
             <h3>Commandes des verbes irréguliers</h3>
             <ol>
-            <li><b>/liste-verbes</b> envoie un message contenant la liste de tous les verbes en fonction des options suivantes :
-                <ol id="irr-verbs-subcmds-list">
-                <li><u>language</u> : la langue de la liste des verbes (Anglais ou Néerlandais).
-                <li><u>showtrad</u> : si Vrai, affiche l'infinitif du verbe et sa traduction en français ;
-                    sinon, affiche l'infinitif, l'imparfait et le participe passé.</li>
-                </ol>
-            </li>
-            <li><b>/etudier-infinitif</b> documentation à venir ...</li>
-            <li><b>/etudier-imparfait</b> documentation à venir ...</li>
-            <li><b>/etudier-participe</b> documentation à venir ...</li>
+                <li><b>/liste-verbes</b> envoie un message contenant la liste de tous les verbes en fonction des options
+                    suivantes :
+                    <ol id="irr-verbs-subcmds-list">
+                        <li><u>language</u> : la langue de la liste des verbes (Anglais ou Néerlandais).
+                        <li><u>showtrad</u> : si Vrai, affiche l'infinitif du verbe et sa traduction en français ;
+                            sinon, affiche l'infinitif, l'imparfait et le participe passé.</li>
+                    </ol>
+                </li>
+                <li><b>/etudier-infinitif</b> documentation à venir ...</li>
+                <li><b>/etudier-imparfait</b> documentation à venir ...</li>
+                <li><b>/etudier-participe</b> documentation à venir ...</li>
             </ol>
 
             <h3>Commandes des points</h3>
             <ol>
-            <li><b>/profil</b> affiche les points de l'utilisateur sélectionné.</li>
-            <li><b>/classement</b> affiche les 20 premiers membres du serveur ayant le plus de points.</li>
-            <li><b>/adminxp</b> modifie les points de l'utilisateur sélectionné. Cette commande est uniquement
-                disponible pour les administrateurs.</li>
+                <li><b>/profil</b> affiche les points de l'utilisateur sélectionné.</li>
+                <li><b>/classement</b> affiche les 20 premiers membres du serveur ayant le plus de points.</li>
+                <li><b>/adminxp</b> modifie les points de l'utilisateur sélectionné. Cette commande est uniquement
+                    disponible pour les administrateurs.</li>
             </ol>
 
             <h3 id="config-cmds">Commandes de configuration</h3>
             <ol>
-            <li><b>/setlang</b> change la langue du bot vers la langue sélectionnée (Français, Anglais, Néerlandais).</li>
+                <li><b>/setlang</b> change la langue du bot vers la langue sélectionnée (Français, Anglais,
+                    Néerlandais).</li>
             </ol>
         </div>
     </div>
