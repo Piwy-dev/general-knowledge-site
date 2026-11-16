@@ -1,4 +1,10 @@
-This is a website for the General Knowledge Discord bot.
+# General Knowledge Bot Website
+
+This is a website for the General Knowledge Discord bot (https://github.com/Piwy-dev/general-knowledge-bot)
+
+## Add the bot to your server
+
+Add the bot to your server by clicking [here](https://discord.com/oauth2/authorize?client_id=803979491373219840&permissions=8&scope=bot%20applications.commands).
 
 ## Contributing
 ### Pre-requisites
@@ -24,4 +30,4 @@ Then, run the following command to start the website:
 flask run
 ```
 
-The website will be available at `http://localhost:5000/`.
+The website will be available at http://localhost:5000/.
