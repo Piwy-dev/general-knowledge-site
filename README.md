@@ -1,6 +1,6 @@
 # General Knowledge Bot Website
 
-This is a website for the General Knowledge Discord bot (https://github.com/Piwy-dev/general-knowledge-bot)
+This is a website for the [General Knowledge Discord Bot](https://github.com/Piwy-dev/general-knowledge-bot)
 
 ## Add the bot to your server
 
